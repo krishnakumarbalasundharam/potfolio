@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    position: sticky;
+    left: 0%;
+    top: 0%;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
+    z-index: 10;
+}
+.navbar-brand{
+    font-weight: 700;
+}
+.nav-link{
+    text-transform: capitalize;
+    color: white;
+}
+.nav-link:hover{
+    border-bottom: 1px solid white;
+}
+#home{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(#07080066 ,rgba(0,0,0,0.4)),url(img/-8cs77x.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+
+}
+#home p{
+    position: absolute;
+    top: 40%;
+    font-weight: 100;
+    font-size: 70px;
+    opacity: 0;
+    animation: text 9s ease-in-out infinite;
+    
+}
+#home p:nth-child(1){
+    animation-delay: 0s;
+
+}
+#home p:nth-child(2){
+    animation-delay: 3s;
+
+}
+#home p:nth-child(3){
+    animation-delay: 6s;
+}
+
+@keyframes text{
+
+     0% {
+        opacity: 0;
+    }
+    11.11% {
+        opacity: 1;
+    }
+    33.33% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;}
+}
+@media screen and (max-width:576px){
+    #home p{
+    font-size: 50px;
+    }
+}
+#home span{
+    color: yellowgreen;
+    font-weight: 400;
+}
+/* about */
+#about{
+    height: 400px;
+    width: 100%;
+    display: grid;
+    place-items:center;
+    background:#2f2f2f ;
+}
+#about .about{
+    position: relative;
+top: -15%;
+    height: 50%;
+    width: 23%;
+    background: goldenrod;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    border-radius: 50%;
+    transition: 1s;
+}
+#about img{
+    height: 150px;
+    width: 130px;
+    position: relative;
+    top: -5%;
+   
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+
+#about .about:hover{
+    position: relative;
+    top: -3%;
+    height: 65%;
+    width: 80%;
+    background:goldenrod;
+    color: black;
+   font-weight: 500;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+    border-radius: 10%;
+    transition: 1s;
+
+}
+ 
+#about .about:hover img{
+    height: 150px;
+    width: 130px;
+    position: relative;
+    top: 7%;
+    left:-37%;
+    filter:grayscale(90%);
+    
+    transition: 1s;
+}
+.about p{
+    margin-top: -10%;
+   visibility: hidden;
+ 
+    
+}
+.about:hover p{
+    padding: 10px;
+    padding-left: 23%;
+    position: relative;
+    top: -25%;
+  visibility: visible;
+  
+}
+.about:hover h1{
+    opacity: 0;
+    transition: 1s;
+}
+
+
+
+@media screen and (max-width:576px){
+    #about{
+        height: 90vh;
+        width: 100%;
+        display: grid;
+        place-items:center;
+        background:#2f2f2f ;
+    }
+    #about .about{
+        position: relative;
+        
+        height: 40%;
+        width: 50%;
+        background: goldenrod;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        border-radius: 50%;
+        transition: 1s;
+    }
+    #about img{
+        height: 150px;
+        width: 130px;
+        position: relative;
+        top: -5%;
+        
+       
+        transition: 1s;
+    }
+    
+    
+    #about .about:hover{
+        height: 80vh;
+        width: 80%;
+        background:goldenrod;
+        color: black;
+       font-weight: 500;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10vh;
+        border-radius: 10%;
+        transition: 1s;
+    
+    }
+     
+    #about .about:hover img{
+        height: 150px;
+        width: 130px;
+        position: relative;
+        top: -3%;
+        left:0%;
+        filter: drop-shadow(0px 5px  rgba(70, 4, 4, 0.4));
+        filter: grayscale(100%);
+        transition: 1s;
+    }
+    .about p{
+        margin-top: 17%;
+       visibility: hidden;
+      padding-top: 10%;
+        
+    }
+    .about:hover p{
+        padding: 15px;
+      visibility: visible;
+      
+    }
+    .about:hover h1{
+        opacity: 0;
+        transition: 1s;
+    }
+    
+   
+
+}
