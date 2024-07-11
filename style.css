@@ -170,7 +170,7 @@ nav{
     #about .about{
         position: relative;
         
-        height: 40%;
+        height: 25%;
         width: 50%;
         background: goldenrod;
         display: flex;
@@ -192,7 +192,7 @@ nav{
     
     
     #about .about:hover{
-        height: 80vh;
+        height: 60vh;
         width: 80%;
         background:goldenrod;
         color: black;
