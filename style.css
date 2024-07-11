@@ -5,7 +5,7 @@
 }
 nav{
     width: 100%;
-    position: sticky;
+    position: sticky !important;
     left: 0%;
     top: 0%;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
