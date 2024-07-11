@@ -176,7 +176,6 @@ nav{
         display: flex;
         align-items: center;
         flex-direction: column;
-        
         border-radius: 50%;
         transition: 1s;
     }
@@ -190,7 +189,7 @@ nav{
     
     
     #about .about:hover{
-        height: 80vh;
+        height: 60vh;
         width: 84%;
         background:goldenrod;
         color: black;
