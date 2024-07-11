@@ -160,7 +160,7 @@ nav{
 
 @media screen and (max-width:576px){
     #about{
-        height: 100vh;
+        height: 80vh;
         width: 100%;
         display: flex;
         justify-content:center;
@@ -218,7 +218,7 @@ nav{
         transition: 1s;
     }
     .about p{
-        margin-top: 35%;
+        margin-top: 30%;
        visibility: hidden;
       
         
