@@ -158,8 +158,85 @@ nav{
     transition: 1s;
 }
 
+@media screen and (max-width:900px){
+#about{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background:#2f2f2f;
+}
+#about .about{
+    position: relative;
+    height: 50%;
+    width: 30%;
+    background: goldenrod;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    border-radius: 50%;
+    transition: 1s;
+}
+#about img{
+    height: 120px;
+    width: 100px;
+    position: relative;
+    top: -3%;
+   
+    filter: grayscale(100%);
+    transition: 1s;
+}
 
 
+#about .about:hover{
+    position: relative;
+    top: -3%;
+    height: 55%;
+    width: 80%;
+    background:goldenrod;
+    color: black;
+   font-weight: 500;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+    border-radius: 10%;
+    transition: 1s;
+
+}
+ 
+#about .about:hover img{
+    height: 120px;
+    width: 100px;
+    position: relative;
+    top: 7%;
+    left:-40%;
+    filter:grayscale(90%);
+    
+    transition: 1s;
+}
+.about p{
+    
+   visibility: hidden;
+   font-family:'Lora', sans-serif;
+    font-weight: 200;
+}
+.about:hover p{
+    padding: 10px;
+    padding-left: 23%;
+    position: relative;
+    top: -33%;
+  visibility: visible;
+  
+}
+.about:hover h1{
+    opacity: 0;
+    transition: 1s;
+}
+
+}
 @media screen and (max-width:480px){
     #about{
         height: 100vh;
