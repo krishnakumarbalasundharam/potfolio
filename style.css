@@ -228,6 +228,7 @@ nav{
 .about:hover p{
     padding: 10px;
     padding-left: 21%;
+    padding-bottom: 5%;
     position: relative;
     top: -27%;
   visibility: visible;
