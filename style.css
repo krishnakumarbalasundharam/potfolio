@@ -180,8 +180,8 @@ nav{
     transition: 1s;
 }
 #about img{
-    height: 20vh;
-    width: 15vw;
+    height: 25vh;
+    width: 17vw;
     position: relative;
     top: -3%;
     filter: grayscale(100%);
