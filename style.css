@@ -239,11 +239,10 @@ nav{
     width: 100%;
     font-size: 20px;
     background-color: lightgrey;
-
+    height: 80vh;
 }
 .container{
     margin-top: 6%;
-    
 }
 .progress{
     height: 35px !important;
