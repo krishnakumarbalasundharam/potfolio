@@ -192,7 +192,7 @@ nav{
 #about .about:hover{
     position: relative;
     top: -3%;
-    height: 50vh;
+    height: 60vh;
     width: 80%;
     background:goldenrod;
     color: black;
