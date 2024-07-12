@@ -217,7 +217,7 @@ nav{
     transition: 1s;
 }
 .about p{
-    
+    font-size: small;
    visibility: hidden;
    font-family:'Lora', sans-serif;
     font-weight: 150;
