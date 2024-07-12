@@ -143,7 +143,7 @@ nav{
     margin-top: -10%;
    visibility: hidden;
    font-family:'Lora', sans-serif;
-    
+    font-weight: 200;
 }
 .about:hover p{
     padding: 10px;
