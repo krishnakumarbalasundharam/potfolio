@@ -220,14 +220,14 @@ nav{
     
    visibility: hidden;
    font-family:'Lora', sans-serif;
-    font-weight: 200;
+    font-weight: 150;
 }
 .about h1{
     font-size:20px;
 }
 .about:hover p{
     padding: 10px;
-    padding-left: 23%;
+    padding-left: 21%;
     position: relative;
     top: -30%;
   visibility: visible;
