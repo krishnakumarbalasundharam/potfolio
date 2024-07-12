@@ -222,6 +222,9 @@ nav{
    font-family:'Lora', sans-serif;
     font-weight: 200;
 }
+.about h1{
+    font-size:4vh;
+}
 .about:hover p{
     padding: 10px;
     padding-left: 23%;
