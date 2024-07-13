@@ -35,11 +35,12 @@
                 <a class="nav-link" href="#projects">projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#cv">CV</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="#contact">contact</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cv">CV</a>
+              </li>
+              
 
             </ul>
           </div>
@@ -132,10 +133,64 @@
 
       <!-- projects -->
       <section id="projects">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- we can add any projects once done ,same for other carousel-items -->
+              <iframe src="https://www.youtube.com/embed/tCHSzNXbNq4?si=GHWMm_207lb67t3V" title="YouTube video player"  frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="will be added soon">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+                
 
       </section>
       <!-- contact -->
       <section id="contact">
+        <div class="container mb-5">
+           <div class="row">
+            <div class="col-lg-7 col-12">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.5520142977084!2d79.53214442351891!3d12.677351837611628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52d739ca28c0cf%3A0xcf104e61b1ee738!2sNehru%20Nagar%2C%20Cheyyar%2C%20Tamil%20Nadu%20604407!5e0!3m2!1sen!2sin!4v1720873654091!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-5 col-12">
+                <form action="">
+                  <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea name="" id="" class="form-control" rows="8"></textarea>
+                  </div>
+                  <button class="btn btn-primary">Send a Message</button>
+                </form>
+            </div>
+           </div>
+        </div>
+
+        
   
       </section>
   </body>
