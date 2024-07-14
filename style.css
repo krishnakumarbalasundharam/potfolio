@@ -334,6 +334,11 @@ nav{
 .progress:hover{
     box-shadow: 3px 4px 6px whitesmoke,-2px -2px 5px grey;
 }
+@media and screen (max-width:576px) {
+    #contact iframe{
+        Height:250 !important;
+    } 
+}
 /* projects */
 #projects{
     height: 100vh;
