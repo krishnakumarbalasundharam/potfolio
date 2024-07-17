@@ -330,7 +330,6 @@ nav{
 }
 .progress{
     height: 35px !important;
-    Background:gray !important;
     box-shadow: 3px 4px 6px gray,-2px -2px 5px white;
 }
 .progress:hover{
