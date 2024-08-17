@@ -185,37 +185,47 @@
                     <textarea name="" id="message" class="form-control" rows="8"></textarea>
                   </div>
                   <button id="sendButton" class="btn btn-primary">Send a Message</button>
+<button onclick="openWhatsApp()" class="btn btn-success">Contact via WhatsApp</button>
                 </form>
             </div>
            </div>
         </div>
 
-      <script> document.getElementById('sendButton').addEventListener('click', function(event) {
-    // Prevent any form submission defaults
-    event.preventDefault();
-
-    // Collect form data
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('message').value;
-
-    // Example: Sending an email via EmailJS
-    emailjs.send('service_zd34fle', 'template_q6gkr0m', {
-        name: name,
-        email: email,
-        message: message
-    }).then(function() {
-        alert('Message sent successfully!');
-    }, function(error) {
-        alert('Failed to send message. Please try again later.');
-    });
-
-    // Example: Triggering a WhatsApp message
-    let whatsappUrl = `https://api.whatsapp.com/send?phone=8778354007&text=Name:%20${encodeURIComponent(name)}%0AMessage:%20${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-});
-   </script>
+     
       </section>
+ <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    // Initialize EmailJS
+    emailjs.init("h4yy32eNGn8j6v_3y");
+
+    // Handle form submission
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        var templateParams = {
+            from_name: document.getElementById('name').value,
+            from_email: document.getElementById('email').value,
+            message: document.getElementById('message').value
+        };
+
+        emailjs.send('service_zd34fle', 'template_q6gkr0m', templateParams)
+            .then(function(response) {
+                alert('Message sent successfully!');
+                // Optionally clear the form fields
+                document.getElementById('contactForm').reset();
+            }, function(error) {
+                alert('Failed to send message. Please try again.');
+            });
+    });
+</script>
+<script>
+    function openWhatsApp() {
+        var phoneNumber = "+918778354007"; // Your phone number
+        var message = encodeURIComponent("Hello! I would like to get in touch.");
+        var url = "https://wa.me/" + phoneNumber + "?text=" + message;
+        window.open(url, '_blank');
+    }
+</script>
   </body>
   </html>
   
