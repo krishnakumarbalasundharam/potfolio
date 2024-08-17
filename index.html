@@ -184,14 +184,37 @@
                     <label class="form-label">Message</label>
                     <textarea name="" id="" class="form-control" rows="8"></textarea>
                   </div>
-                  <button class="btn btn-primary">Send a Message</button>
+                  <button id="sendButton" class="btn btn-primary">Send a Message</button>
                 </form>
             </div>
            </div>
         </div>
 
-        
-  
+      <script> document.getElementById('sendButton').addEventListener('click', function(event) {
+    // Prevent any form submission defaults
+    event.preventDefault();
+
+    // Collect form data
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('message').value;
+
+    // Example: Sending an email via EmailJS
+    emailjs.send('service_zd34fle', 'template_q6gkr0m', {
+        name: name,
+        email: email,
+        message: message
+    }).then(function() {
+        alert('Message sent successfully!');
+    }, function(error) {
+        alert('Failed to send message. Please try again later.');
+    });
+
+    // Example: Triggering a WhatsApp message
+    let whatsappUrl = `https://api.whatsapp.com/send?phone=8778354007&text=Name:%20${encodeURIComponent(name)}%0AMessage:%20${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+});
+   </script>
       </section>
   </body>
   </html>
